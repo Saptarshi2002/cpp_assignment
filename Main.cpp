@@ -85,13 +85,14 @@ int main() {
         return 1;
     }
 
-    int real,imaginary;
+    //int real,imaginary;
     string line;
     while(getline(inputFile,line)){
         stringstream ss(line);
         if (ss >> real >> imaginary) {
-            ComplexNumber c(real, imaginary);
-            cout << "Read complex number: " << c << endl;
+            ComplexNumber temp(real, imaginary);
+            cout << "Read complex number: " << temp << endl;
+            cn.add(temp);
         } else {
             cerr << "Invalid line: " << line << endl;
         }
