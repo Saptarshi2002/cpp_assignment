@@ -70,7 +70,7 @@ int main() {
         cout << "Complex Number " << i + 1 << ": " << arr[i] << endl;
     }
 
-
+    ComplexNumber cn;
 
 
     ifstream inputFile("complex_number.txt");
