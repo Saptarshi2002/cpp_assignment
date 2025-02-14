@@ -72,6 +72,12 @@ int main() {
 
     ComplexNumber cn;
 
+    for (int i = 0; i < 5; ++i) {
+        cn.add(arr[i]);
+    }
+
+    cout << "Complex number after adding array elements: " << cn << endl;
+
 
     ifstream inputFile("complex_number.txt");
     if(!inputFile){
