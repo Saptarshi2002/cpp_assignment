@@ -99,6 +99,8 @@ int main() {
     }
 
     inputFile.close();
+
+    cout << "Final Complex Number cn: " << cn << endl;
     
     return 0;
 }
